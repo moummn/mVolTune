@@ -10,3 +10,15 @@ D:\Users\ZN\Source\Repos\moummn\MMN\mVolTune\mVolTune\obj\Debug\mVolTune.exe
 D:\Users\ZN\Source\Repos\moummn\MMN\mVolTune\mVolTune\obj\Debug\mVolTune.xml
 D:\Users\ZN\Source\Repos\moummn\MMN\mVolTune\mVolTune\obj\Debug\mVolTune.pdb
 D:\Users\ZN\Source\Repos\moummn\MMN\mVolTune\mVolTune\bin\Debug\mVolTune.exe.config
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\bin\Debug\mVolTune.exe.config
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\bin\Debug\mVolTune.exe
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\bin\Debug\mVolTune.pdb
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\bin\Debug\mVolTune.xml
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\obj\Debug\mVolTune.vbproj.AssemblyReference.cache
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\obj\Debug\mVolTune.mVolTune.resources
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\obj\Debug\mVolTune.Resources.resources
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\obj\Debug\mVolTune.vbproj.GenerateResource.cache
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\obj\Debug\mVolTune.vbproj.CoreCompileInputs.cache
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\obj\Debug\mVolTune.exe
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\obj\Debug\mVolTune.xml
+D:\Users\ZN\Source\Repos\moummn\mVolTune\mVolTune\mVolTune\obj\Debug\mVolTune.pdb
