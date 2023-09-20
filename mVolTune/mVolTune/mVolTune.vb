@@ -19,9 +19,9 @@ Public Class mVolTune
          ByVal vk As Integer) As Boolean
     Private Declare Auto Function UnRegisterHotKey Lib "user32.dll" Alias "UnregisterHotKey" _
         (ByVal hwnd As IntPtr, ByVal id As Integer) As Boolean
-    ''调节显示器亮度API（测试）
-    'Private Declare Auto Function SetMonitorBrightness Lib "dxva2.dll" Alias "SetMonitorBrightness" _
-    '    (ByVal hMonitor As Integer, ByVal dwNewBrightness As UInteger)
+    '调节显示器亮度API（测试）
+    Private Declare Auto Function SetMonitorBrightness Lib "dxva2.dll" Alias "SetMonitorBrightness" _
+        (ByVal hMonitor As Integer, ByVal dwNewBrightness As UInteger)
 
     Private Sub mVolTune_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -29,12 +29,13 @@ Public Class mVolTune
         RegisterHotKey(Handle, 0, MOD_CONTROL + MOD_ALT, Keys.Right) '第一个热键
         'RegisterHotKey(Handle, 1, Nothing, Keys.F4) '第二个热键
         RegisterHotKey(Handle, 1, MOD_CONTROL + MOD_ALT, Keys.Left) '第二个热键
-        'RegisterHotKey(Handle, 1, MOD_CONTROL + MOD_ALT, Keys.Up)
+        RegisterHotKey(Handle, 2, MOD_CONTROL + MOD_ALT, Keys.Up)
     End Sub
     Private Sub mVolTune_FormClosed(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
         '注销全局热键
         UnRegisterHotKey(Handle, 0)
         UnRegisterHotKey(Handle, 1)
+        UnRegisterHotKey(Handle, 2)
     End Sub
 
     Protected Overrides Sub WndProc(ByRef m As Message)
@@ -46,9 +47,10 @@ Public Class mVolTune
                     SendMessage(Me.Handle, WM_APPCOMMAND, Me.Handle, APPCOMMAND_VOLUME_UP)
                 Case &H250003
                     SendMessage(Me.Handle, WM_APPCOMMAND, Me.Handle, APPCOMMAND_VOLUME_DOWN)
-                    'Case &H260003
-                    '    Dim TS As New Management.Instrumentation.ManagementKeyAttribute
-                    '    Debug.Print(TS.ToString)
+                Case &H260003
+                    Dim TS As New System.Management.Instrumentation.ManagementKeyAttribute
+
+                    Debug.Print(TS.ToString)
             End Select
         End If
         MyBase.WndProc(m)
